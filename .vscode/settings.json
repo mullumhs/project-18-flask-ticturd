@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.indentInnerHtml": true,
+  "html.format.preserveNewLines": true,
+  "files.associations": {
+    "*.html": "html",
+    "*.jinja": "jinja-html",
+    "*.jinja2": "jinja-html"
+  },
+  "emmet.includeLanguages": {
+    "html": "html",
+    "jinja-html": "html"
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "jinja.format.enabled": true,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "emmet.triggerExpansionOnTab": true
+}
