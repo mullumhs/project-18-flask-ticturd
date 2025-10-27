@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+    <h1>Your Inventory:</h1>
+    <ul>
+        {% for item in inventory%}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'apple' in inventory %}
+    <p>You have an apple.</p>
+    {% else %}
+    <p>You do not have an apple.</p>
+    {% endif %}
+</body>
+</html>
