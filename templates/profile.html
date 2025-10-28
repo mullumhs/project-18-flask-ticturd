@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ username }}'s Profile</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
+    <h1>Hi, {{ username }}</h1>
+    {% if username == "nicky" %}
+    <img src = "{{ url_for('static', filename = 'nicky.jpg') }}" alt = "Profile Picture">
+    {% else %}
+    <img src = "{{ url_for('static', filename = 'profile_picture.jpg') }}" alt = "Profile Picture">
+    {% endif %}
+</body>
+</html>
